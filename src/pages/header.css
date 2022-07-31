@@ -1,0 +1,12 @@
+.header-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
