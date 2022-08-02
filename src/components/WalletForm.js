@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import '../pages/formWalet.css';
 import { getApi as getApiFetch,
   getExpensesFetch as getExpensesAction } from '../redux/actions';
 
@@ -40,11 +41,11 @@ class WalletForm extends Component {
     const { currencies } = this.props;
     const { value, description, currency } = this.state;
     return (
-      <div>
-        <p>WalletForm</p>
+      <div className="container-form">
         <label htmlFor="valor-input">
-          Valor:
+          <span>Valor:</span>
           <input
+            className="input-valor "
             id="valor-input"
             data-testid="value-input"
             type="number"
@@ -54,19 +55,9 @@ class WalletForm extends Component {
           />
         </label>
 
-        <label htmlFor="valor-input">
-          Descrição:
-          <input
-            id="valor-input"
-            type="text"
-            data-testid="description-input"
-            name="description"
-            value={ description }
-            onChange={ this.handChange }
-          />
-        </label>
-
+        <span>Moeda:</span>
         <select
+          className="input-valor "
           data-testid="currency-input"
           onChange={ this.handChange }
           name="currency"
@@ -76,7 +67,21 @@ class WalletForm extends Component {
             .map((moedas) => <option value={ moedas } key={ moedas }>{moedas}</option>)}
         </select>
 
+        <label htmlFor="valor-input">
+          <span>Descrição:</span>
+          <input
+            className="inputs"
+            id="valor-input"
+            type="text"
+            data-testid="description-input"
+            name="description"
+            value={ description }
+            onChange={ this.handChange }
+          />
+        </label>
+        <span>Metodo de pagamento:</span>
         <select
+          className="inputs"
           data-testid="method-input"
           onChange={ this.handChange }
           name="method"
@@ -85,8 +90,9 @@ class WalletForm extends Component {
           <option>Cartão de crédito</option>
           <option>Cartão de débito</option>
         </select>
-
+        <span>Tag:</span>
         <select
+          className="inputs"
           data-testid="tag-input"
           onChange={ this.handChange }
           name="tag"
@@ -99,6 +105,7 @@ class WalletForm extends Component {
         </select>
 
         <button
+          className="inputSub"
           type="button"
           onClick={ this.addDespesas }
         >

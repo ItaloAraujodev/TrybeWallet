@@ -1,0 +1,35 @@
+.container-form {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+}
+
+.inputs {
+  margin: 0 10px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+}
+
+.input-valor {
+  margin: 0 10px;
+  padding: 5px;
+  width: 80px;
+}
+
+.tag-p {
+  margin: auto 8px;
+}
+
+.inputSub {
+  background-color: rgb(0, 47, 183);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+

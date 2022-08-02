@@ -13,21 +13,21 @@ class Header extends Component {
   }
 
   render() {
-    const { email, expenses } = this.props;
-    console.log(expenses);
+    const { email } = this.props;
 
     return (
       <div className="header-container">
         <h2>Header</h2>
         <div className="header">
           <p data-testid="email-field">{`Email: ${email}`}</p>
-          <div>
+          <div className="header-context">
+            <p className="tag-p">Despesa Totais:</p>
             <p
               data-testid="total-field"
             >
-              { this.valueTransform()}
+              { `R$: ${this.valueTransform()}`}
             </p>
-            <p data-testid="header-currency-field">BRL</p>
+            <p className="tag-p" data-testid="header-currency-field">BRL</p>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@ const mapStateToProps = (state) => ({
 
 Header.propTypes = {
   email: PropTypes.string,
-  expenses: PropTypes.array,
+  expenses: PropTypes.arrayOf(PropTypes.shape({})),
 }.isRequired;
 
 export default connect(mapStateToProps)(Header);

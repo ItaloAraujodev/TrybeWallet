@@ -5,8 +5,13 @@
 }
 
 .header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  margin: auto 0;
   width: 500px;
+}
+
+.header-context {
+  display: flex;
+  margin-right: 10px;
 }
