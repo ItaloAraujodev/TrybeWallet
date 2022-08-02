@@ -25,7 +25,7 @@ class Header extends Component {
             <p
               data-testid="total-field"
             >
-              { `R$: ${this.valueTransform()}`}
+              { this.valueTransform()}
             </p>
             <p className="tag-p" data-testid="header-currency-field">BRL</p>
           </div>
