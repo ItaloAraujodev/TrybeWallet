@@ -1,0 +1,26 @@
+.table-container {
+  height: 650px;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 1000px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+thead th {
+  background-color: #f6f9fc;
+  color: #8493a5;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+}
+
+thead th , td {
+  border-bottom: 1px solid #cacaca;
+  padding: 10px 20px;
+  text-align: center;
+  word-break: break-all;
+}

@@ -4,6 +4,7 @@ import getUrl from '../services/getUrl';
 export const USER_LOGIN = ' USER_LOGIN';
 export const CURRENCIES_ACTION = 'CURRENCIES_ACTION';
 export const EXPENSES_ACTION = 'EXPENSES_ACTION';
+export const DELETE_EXPENSES = 'DELETE_EXPENSES';
 
 export const userLogin = (payload) => ({
   type: USER_LOGIN,
@@ -17,6 +18,11 @@ const apiCurrencies = (payload) => ({
 
 export const getExpenses = (payload) => ({
   type: EXPENSES_ACTION,
+  payload,
+});
+
+export const deleteExpense = (payload) => ({
+  type: DELETE_EXPENSES,
   payload,
 });
 
