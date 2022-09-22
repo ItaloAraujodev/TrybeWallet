@@ -1,0 +1,76 @@
+.header-container {
+  background: white;
+  border: 1px solid white;
+  border-radius: 0 0 10px 10px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 1037px;
+  z-index: 10;
+}
+
+.header-context {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.icon-logo {
+  display: flex;
+
+}
+
+.icon-logo p {
+  color: #003be5;
+  font-size: 35px;
+}
+
+.icon-logo span {
+  color: #2fc18c;
+  font-weight: 700;
+}
+
+.icon-logo img {
+  background-color: #00d5e2;
+  border-radius: 10px 5px;
+  height: 50px;
+  margin-right: 20px;
+  width: 50px;
+}
+
+.header-despesas {
+  align-items: center;
+  display: flex;
+}
+
+.header-despesas p {
+  color: #003be5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header-despesas span {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.header-despesas img {
+  margin-right: 15px;
+}
+
+.header-email {
+  align-items: center;
+  display: flex;
+}
+
+.header-email p {
+  color: #2fc18c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-email img {
+  margin-right: 15px;
+}
+

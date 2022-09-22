@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import '../pages/header.css';
+import WalletForm from './WalletForm';
+/* CSS */
+import './header.css';
+import '../pages/AppUser.css';
+/* IMAGENS */
+import icone from '../imagens/icone.png';
+import moedas from '../imagens/Moedas.png';
+import perfil from '../imagens/perfil.png';
 
 class Header extends Component {
   valueTransform = () => {
@@ -17,19 +24,32 @@ class Header extends Component {
 
     return (
       <div className="header-container">
-        <h2>Header</h2>
-        <div className="header">
-          <p data-testid="email-field">{`Email: ${email}`}</p>
-          <div className="header-context">
-            <p className="tag-p">Despesa Totais:</p>
-            <p
-              data-testid="total-field"
-            >
-              { this.valueTransform()}
+        <div className="header-context">
+          <div className="icon-logo">
+            <img src={ icone } alt="icone" />
+            <p>
+              {' '}
+              Trybe
+              <span>
+                {' '}
+                Wallet
+              </span>
             </p>
-            <p className="tag-p" data-testid="header-currency-field">BRL</p>
+          </div>
+          <div className="header-despesas">
+            <img src={ moedas } alt="Moedas" />
+            <p>
+              Total de despesas:
+              <span>{ this.valueTransform() }</span>
+              <span>BRL</span>
+            </p>
+          </div>
+          <div className="header-email">
+            <img src={ perfil } alt="Perfil" />
+            <p data-testid="email-field">{`Email: ${email}`}</p>
           </div>
         </div>
+        <WalletForm />
       </div>
     );
   }
