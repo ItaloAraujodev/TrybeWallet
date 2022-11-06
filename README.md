@@ -1,16 +1,10 @@
-# 🚧 README em construção 🚧
+# ➢ Trybe-Wallet 
 
-<!-- Olá, Tryber!
+• Project responsible for presenting my skills with React, JavaScript, React Router, Redux, React Testing Library, Jest, HTML and CSS
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+## Preview:
 
-É essencial que você preencha esse documento por conta própria, ok?
-
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+<div align="center" margin="50px">
+	<img src="https://i.imgur.com/baTV5C8.png" />
+	<img src="https://i.imgur.com/8nk8kQN.png" />
+</div>
