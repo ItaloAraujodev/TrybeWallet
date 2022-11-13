@@ -1,6 +1,6 @@
 # Projeto Trybe Wallet
 
-Este projeto foi feito durante o bloco de Front-End na [Trybe](https://www.betrybe.com/) por _[Ítalo Araújo](https://www.linkedin.com/in/italoaraujodev/)_ :rocket:
+Este projeto foi desenvolvido durante o bloco de Front-End na [Trybe](https://www.betrybe.com/) por _[Ítalo Araújo](https://www.linkedin.com/in/italoaraujodev/)_ :rocket:
 
 <img src="https://i.imgur.com/baTV5C8.png" />
 <img src="https://i.imgur.com/8nk8kQN.png" />
